@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background" />
+
+    <LinearLayout
+        android:id="@+id/heroSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="40dp">
+        <ImageView
+            android:id="@+id/loginLogo"
+            android:layout_width="200dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo"/>
+        <TextView
+            android:id="@+id/welcomeMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/textPrimary"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tagline"
+            android:textColor="@color/textSecondary"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/loginSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@id/heroSection"
+        android:gravity="center_horizontal"
+        android:layout_margin="40dp">
+
+        <Button
+            android:id="@+id/googleButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/button_border"
+            android:text="@string/loginGoogle"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:padding="10dp"/>
+
+
+        <LinearLayout
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <!-- First Divider Line -->
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/textPrimary"
+                android:layout_weight="1" />
+
+            <!-- 'or' Text -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="atau"
+                android:textSize="16sp"
+                android:textColor="@color/textPrimary"
+                android:gravity="center" />
+
+            <!-- Second Divider Line -->
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="20dp"
+                android:background="@color/textPrimary"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            >
+
+            <EditText
+                android:id="@+id/username"
+                android:hint="@string/unameHint"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/field_border"
+                android:textColorHint="@color/textPrimary"
+                android:textColor="@color/textPrimary"/>
+
+            <EditText
+                android:id="@+id/email"
+                android:hint="@string/emailHint"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/field_border"
+                android:textColorHint="@color/textPrimary"
+                android:textColor="@color/textPrimary"/>
+
+            <EditText
+                android:id="@+id/password"
+                android:hint="@string/passwordHint"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/field_border"
+                android:textColorHint="@color/textPrimary"
+                android:textColor="@color/textPrimary"/>
+
+            <EditText
+                android:id="@+id/passwordRepeat"
+                android:hint="@string/passwordHintRepeat"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/field_border"
+                android:textColorHint="@color/textPrimary"
+                android:textColor="@color/textPrimary"/>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@color/textSecondary"
+                android:text="@string/daftar"
+                android:textColor="@color/textBack"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:padding="10dp"
+                android:layout_margin="20dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footerSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:gravity="center_horizontal"
+        android:layout_margin="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sudah_punya_akun"
+            android:layout_margin="5dp"
+            android:textColor="@color/textPrimary"/>
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/masuk_disini"
+            android:layout_margin="5dp"
+            android:textColor="@color/primary"
+            android:clickable="true"
+            android:focusable="true" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

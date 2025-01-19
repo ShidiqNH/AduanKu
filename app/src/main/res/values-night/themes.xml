@@ -1,0 +1,32 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.AduanKu" parent="Theme.Design.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+    </style>
+
+    <!-- Light Theme -->
+    <style name="AppTheme" parent="Base.Theme.AduanKu">
+        <!-- Window and Status Bar Colors -->
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
+
+        <!-- Primary and Secondary Colors -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorOnPrimary">@color/textPrimary</item>
+        <item name="colorSurface">@color/buttonBackground</item>
+        <item name="colorOnSurface">@color/textPrimary</item>
+        <item name="colorPrimaryVariant">@color/primaryVariant</item>
+        <item name="colorControlHighlight">@color/accent</item>
+    </style>
+
+    <!-- Apply the base theme -->
+    <style name="Theme.AduanKu" parent="Base.Theme.AduanKu" />
+
+    <!-- Button style -->
+    <style name="button">
+        <item name="backgroundColor">@color/white</item>
+    </style>
+</resources>

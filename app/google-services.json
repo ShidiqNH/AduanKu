@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1094140543613",
+    "project_id": "aduanku-68a3e",
+    "storage_bucket": "aduanku-68a3e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1094140543613:android:701f66996a1197a71c6714",
+        "android_client_info": {
+          "package_name": "com.aduanku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1094140543613-l85da9sfh0kmvne650uiuc7gn496qt9o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlKcf6Rw4s4nKeDmqelCVPwd1zymeXcEA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1094140543613-l85da9sfh0kmvne650uiuc7gn496qt9o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
